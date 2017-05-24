@@ -24,7 +24,6 @@ namespace encrypt_c
         {
             this.Startup += new EventHandler(ThisAddIn_Startup);
         }
-        
         #endregion
     }
 }
