@@ -34,6 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EncryptButton));
             this.tab1 = this.Factory.CreateRibbonTab();
             this.EncryptEmail = this.Factory.CreateRibbonGroup();
             this.EncryptBtn = this.Factory.CreateRibbonButton();
@@ -59,12 +60,13 @@
             // EncryptBtn
             // 
             this.EncryptBtn.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.EncryptBtn.Image = global::encrypt_c.Properties.Resources._lock;
+            this.EncryptBtn.Image = ((System.Drawing.Image)(resources.GetObject("EncryptBtn.Image")));
             this.EncryptBtn.Label = "New Encrypted Email";
             this.EncryptBtn.Name = "EncryptBtn";
             this.EncryptBtn.Position = this.Factory.RibbonPosition.BeforeOfficeId("MailNewItemMenu");
             this.EncryptBtn.ScreenTip = "Create New Encrypted Email";
             this.EncryptBtn.ShowImage = true;
+            this.EncryptBtn.SuperTip = "https://my.pitt.edu";
             this.EncryptBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.EncryptBtn_Click);
             // 
             // EncryptButton
